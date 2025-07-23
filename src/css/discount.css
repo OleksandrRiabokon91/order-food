@@ -1,0 +1,45 @@
+.discount {
+  background-color: var(--white);
+}
+
+.discount-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.discount-text-accent {
+  display: block;
+  border-radius: 12px;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .discount-text {
+    font-size: var(--font-size-h2);
+    line-height: 1;
+    padding-left: 16px;
+  }
+
+  .discount-text-accent {
+    display: inline-block;
+    padding: 20px 15px 0 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .discount-text {
+    font-size: var(--font-size-h1);
+  }
+
+  .discount-text-accent {
+    padding: 4px 0 4px 16px;
+    margin: 0 4px 0 -16px;
+  }
+}

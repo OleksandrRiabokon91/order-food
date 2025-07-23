@@ -1,0 +1,52 @@
+<div class="beckdrop-modal" data-modal>
+  <div class="modal">
+    <button class="close-btn-mod" type="button" data-modal-close>
+      <svg class="mod-x-icon">
+        <use href="/img/sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+    <p class="modal-title">
+      Ordering <span class="modal-title-red">from us</span> is quick and easy!
+      Fill out <span class="modal-title-green">the form</span> below and we will
+      contact you !
+    </p>
+    <form class="modal-form">
+      <label class="modal-form-label" for="user-name"></label>
+      <div class="input-wrap">
+        <input
+          class="modal-form-input"
+          type="text"
+          id="user-name"
+          name="user-name"
+          placeholder="Full Name"
+          pattern="[A-Za-zА-Яа-яЁё ]+"
+          required
+        />
+      </div>
+      <label class="modal-form-label" for="email"></label>
+      <div class="input-wrap">
+        <input
+          class="modal-form-input"
+          type="email"
+          id="email"
+          name="user-email"
+          placeholder="Email"
+          pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
+          required
+        />
+      </div>
+      <div class="text-box-mod">
+        <label class="modal-form-label" for="user-comment"></label>
+        <textarea
+          class="textarea-mod"
+          name="user-comment"
+          id="user-comment"
+          rows="5"
+          placeholder="Comment"
+          required
+        ></textarea>
+      </div>
+      <button class="modal-send-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>

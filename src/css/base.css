@@ -1,0 +1,128 @@
+:root {
+  --font-family: 'Inter Tight', sans-serif;
+
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-h1: 76px;
+  --font-size-h2: 64px;
+  --font-size-h3: 32px;
+
+  --font-size-body: 16px;
+  --line-height-body: 20px;
+
+  --font-size-button: 18px;
+  --line-height-button: 20px;
+
+  --letter-spacing-wide: -1.5%;
+  --letter-spacing-normal: 0;
+
+  --black: #141414;
+  --white: #fbfbfb;
+  --chianti: #7a3145;
+  --blush: #d4bfc4;
+  --green: #576f35;
+  --grey: #858585;
+  --transparent: #141414;
+  --greenlight: #36cb01;
+  --smthwrong: #e74a3b;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-normal);
+  color: var(--white);
+  background-color: var(--white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-h1);
+  line-height: 1;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+h2 {
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-h2);
+  line-height: 1;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+h3 {
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-h3);
+  line-height: 1;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+p {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+button {
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-button);
+  line-height: var(--line-height-button);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 375px) {
+  :root {
+    --font-size-h1: 48px;
+    --font-size-h2: 48px;
+    --font-size-h3: 28px;
+    --font-size-body: 14px;
+    --font-size-button: 18px;
+  }
+}

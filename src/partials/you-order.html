@@ -1,0 +1,110 @@
+<section class="order" id="order">
+  <div class="container">
+    <h2 class="order-title">
+      Fresh <span class="order-title-accent">Harvest</span> Box has got you
+      covered
+    </h2>
+    <p class="order-text">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="order-form-container">
+      <p class="order-form-title">
+        Ordering <span class="form-title-accent">from us</span> is quick and
+        easy! Fill out <span class="form-title-accent">the form</span> below and
+        we will contact you !
+    </p>
+      <form class="order-form" name="order-form" autocomplete="off">
+        <label class="visually-hidden" for="order-name">Full Name</label>
+        <input
+          class="order-form-input"
+          id="order-name"
+          name="order-name"
+          type="text"
+          placeholder="Full Name"
+          minlength="3"
+          required
+        />
+        <label class="visually-hidden" for="order-email">Email</label>
+        <input
+          class="order-form-input"
+          id="order-email"
+          name="order-email"
+          type="email"
+          placeholder="Email"
+          pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
+          required
+        />
+        <label class="visually-hidden" for="order-comment">Comment</label>
+        <textarea
+          class="order-form-textarea"
+          id="order-comment"
+          name="order-comment"
+          placeholder="Comment"
+          rows="3"
+        ></textarea>
+        <button class="order-form-btn" type="submit">Send</button>
+      </form>
+    </div>
+    <div class="order-social-container">
+      <picture>
+        <source
+          media="(min-width: 1158px)"
+          srcset="
+            /img/order/order-desktop.webp   1x,
+            /img/order/order-desktop2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/order/order-tablet.webp   1x,
+            /img/order/order-tablet2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            /img/order/order-mobile.webp   1x,
+            /img/order/order-mobile2x.webp 2x
+          "
+        />
+        <img
+          src="/img/order/order-desktop.webp"
+          alt="A woman in a purple sports bra is preparing a smoothie in a modern kitchen. She is squeezing a lemon into a blender bottle filled with sliced bananas. Various fresh fruits, including apples, strawberries, and oranges, are on the countertop."
+          width="428"
+          height="352"
+          class="order-img"
+        />
+      </picture>
+      <p class="order-social-text">Follow us on our social networks:</p>
+      <ul class="order-social-list">
+        <li class="order-social-item">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/goitclub/"
+            class="order-social-link"
+            >instagram</a
+          >
+        </li>
+        <li class="order-social-item">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/goITclub/"
+            class="order-social-link"
+            >facebook</a
+          >
+        </li>
+        <li class="order-social-item">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/c/GoIT"
+            class="order-social-link"
+            >youtube</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
